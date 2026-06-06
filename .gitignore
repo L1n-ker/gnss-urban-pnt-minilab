@@ -1,0 +1,64 @@
+# Python cache/build artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+
+# Local environments
+.venv/
+venv/
+.env
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs and temporary files
+*.log
+results/streamlit*.log
+*.tmp
+*.temp
+~$*
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+notebooks/
+
+# Generated experiment outputs
+results/*
+!results/.gitkeep
+!results/selected/
+!results/selected/**
+
+# Large/raw data artifacts
+*.zip
+*.7z
+*.rar
+*.tar
+*.tar.gz
+*.npy
+*.npz
+*.h5
+*.hdf5
+*.mat
+*.bin
+*.ubx
+*.obs
+*.nav
+*.rnx
+*.rinex
+data/raw/
+large_data/
+
+# Local planning/audit notes not intended for the supervisor-facing repo
+docs/current_state_audit_*.md
+docs/gui_integration_plan_*.md
+docs/implementation_plan_*.md
+docs/github_upload_manifest.md
+docs/one_page_report.md
+docs/project_portfolio.md
+docs/project_summary.md
