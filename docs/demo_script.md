@@ -10,7 +10,7 @@ python app.py
 
 2. Start with the project identity:
 
-> This is my GNSS Urban PNT MiniLab. I built it as a research-preparation portfolio to connect GNSS pseudorange positioning, urban degradation, robust estimation, assisted navigation, and one simplified literature-inspired reproduction.
+> This is my GNSS Urban PNT MiniLab. I built it as a research-preparation portfolio to connect GNSS pseudorange positioning, urban degradation, robust estimation, assisted navigation, and one literature-inspired conceptual replication.
 
 3. Show the interactive tabs:
 
@@ -18,11 +18,11 @@ python app.py
 
 4. Show the research-result tabs:
 
-> The later tabs are fixed reproducible experiments loaded from `results/`. They include DOP/HDOP, robust LS, urban LOS/NLOS, GNSS/INS toy fusion, LEO-like aiding, sliding-window optimization, urban error maps, collaborative positioning, and pseudorange-correlogram reproduction.
+> The later tabs are fixed reproducible experiments loaded from `results/`. They include DOP/HDOP, robust LS, urban LOS/NLOS, GNSS/INS toy fusion, LEO-like aiding, sliding-window optimization, urban error maps, collaborative positioning, and a pseudorange-correlogram-inspired toy experiment.
 
 5. Emphasize academic honesty:
 
-> Everything is simplified. This is not a real receiver, not SDR, not real spoofing detection, and not a full paper reproduction. The value is that I started building the modeling, coding, experiment, and literature-connection foundation.
+> Everything is simplified. This is not a real receiver, not SDR, not real spoofing detection, and not an exact paper reproduction. The value is that I started building the modeling, coding, experiment, and literature-connection foundation.
 
 ## 7-Minute Supervisor Demo
 
@@ -46,9 +46,9 @@ python app.py
 
 > I added a sliding-window least-squares toy optimizer inspired by factor graphs. It combines pseudorange residuals with odometry smoothness constraints. I also added a two-agent collaborative positioning toy demo with a relative distance constraint.
 
-6. Literature-grounded reproduction:
+6. Literature-grounded conceptual replication:
 
-> I selected a recent GPS Solutions paper involving Prof. Bing Xu on pseudorange correlogram positioning. My reproduction is intentionally limited: it uses a public UrbanNav route subset, but synthetic pseudorange and C/N0 measurements. It demonstrates one algorithmic idea rather than reproducing the full paper.
+> I selected a recent GPS Solutions paper involving Prof. Bing Xu on pseudorange correlogram positioning. My conceptual replication is intentionally limited: it uses a public UrbanNav route subset, but synthetic pseudorange and C/N0-like measurements. It demonstrates one algorithmic idea rather than reproducing the paper's real UrbanNav/RINEX experiment.
 
 7. Close:
 

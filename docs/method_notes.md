@@ -52,8 +52,8 @@ The collaborative module jointly estimates two agents using each agent's GNSS ps
 
 This is not a full cooperative localization, V2X, UWB, or networked positioning system.
 
-## Literature-Grounded Reproduction
+## Literature-Grounded Conceptual Replication
 
-The pseudorange-correlogram reproduction is inspired by Vicenzo, Xu, Xu, and Hsu (2024). It uses a public UrbanNav route subset and synthetic pseudorange/C/N0 measurements.
+The pseudorange-correlogram toy experiment is inspired by Vicenzo, Xu, Xu, and Hsu (2024). It uses a public UrbanNav route subset and synthetic pseudorange/C/N0-like measurements.
 
-It is not a full reproduction of the paper's raw-data pipeline or reported results.
+It is not an exact reproduction of the paper's raw-data pipeline or reported results.

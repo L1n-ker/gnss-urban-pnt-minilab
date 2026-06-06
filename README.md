@@ -2,7 +2,24 @@
 
 This repository is a small research-preparation project for learning GNSS positioning, urban PNT degradation, robust pseudorange estimation, and simplified LEO-like ranging assistance.
 
-The intended reader is a potential MSc dissertation / research supervisor. The project was organized after receiving advice from Prof. Bing Xu at PolyU to first strengthen the fundamentals of GNSS positioning and then gradually move toward multipath, spoofing, and LEO PNT topics. It is not a research-grade receiver. Its purpose is to show that I have started building the mathematical, simulation, coding, and experimental-analysis foundation needed for future work in satellite navigation.
+The intended reader is an academic supervisor or mentor who would like to understand my self-study preparation in GNSS positioning and assisted PNT. The project was organized after receiving advice from Prof. Bing Xu at PolyU to first strengthen the fundamentals of GNSS positioning and then gradually move toward multipath, spoofing, and LEO PNT topics. It is not a research-grade receiver. Its purpose is to show that I have started building the mathematical, simulation, coding, and experimental-analysis foundation needed for future work in satellite navigation.
+
+Suggested GitHub repository description:
+
+> A GNSS urban PNT learning portfolio for robust pseudorange positioning, NLOS simulation, LEO-like aiding, and pseudorange-correlogram toy reproduction.
+
+## Quick Review for Supervisors
+
+- `docs/prof_xu_update.md`: one-page update focused on GNSS positioning, multipath/NLOS learning, LEO-like assisted PNT, and the pseudorange-correlogram-inspired toy experiment.
+- `docs/prof_wen_update.md`: one-page update focused on urban navigation, robust PNT, synthetic LOS/NLOS modeling, GNSS/INS toy fusion, sliding-window LS, and collaborative positioning.
+- `results/selected/`: five curated result figures for a fast visual review.
+- `reproduction/method_scope.md`: exact boundary of the pseudorange-correlogram-inspired conceptual replication.
+- `docs/limitations.md`: technical and presentation limitations.
+
+This repository can be read through two demo paths:
+
+- GNSS signal processing and LEO-like assisted PNT path.
+- Urban navigation and robust PNT path.
 
 ## Two-Minute Overview
 
@@ -14,7 +31,7 @@ The intended reader is a potential MSc dissertation / research supervisor. The p
 
 **Main limitation.** This is a synthetic 2D educational project. It does not process real RINEX, IF samples, ephemerides, carrier phase, real C/N0 logs, or real LEO orbit models.
 
-**How to run.** Install `requirements.txt`, then run `python app.py`, `python experiments/run_all_experiments.py`, or `python -m unittest discover -s tests -v`.
+**How to run.** Install `requirements.txt`, then run `python app.py`, `python experiments/run_all_experiments.py`, `python reproduction/run_reproduction.py`, or `python -m unittest discover -s tests -v`.
 
 ## What This MiniLab Demonstrates
 
@@ -69,7 +86,7 @@ Run all main experiments and regenerate full results:
 python experiments/run_all_experiments.py
 ```
 
-Run the pseudorange-correlogram-inspired reproduction experiment:
+Run the pseudorange-correlogram-inspired toy experiment:
 
 ```bash
 python reproduction/run_reproduction.py
@@ -85,15 +102,15 @@ python -m unittest discover -s tests -v
 
 ```text
 .
-├── app.py                         # Tkinter GUI for interactive experiments
-├── src/                           # Core positioning, geometry, and simulation modules
-├── experiments/                   # Reproducible synthetic experiment scripts
-├── reproduction/                  # Pseudorange-correlogram-inspired toy study
-├── docs/                          # Method notes, limitations, and supervisor update
-├── tests/                         # Unit tests for solvers, models, GUI artifacts, and experiments
-├── results/selected/              # Curated figures for GitHub display
-├── requirements.txt
-└── README.md
+|-- app.py                         # Tkinter GUI for interactive experiments
+|-- src/                           # Core positioning, geometry, and simulation modules
+|-- experiments/                   # Reproducible synthetic experiment scripts
+|-- reproduction/                  # Pseudorange-correlogram-inspired toy study
+|-- docs/                          # Method notes, limitations, and supervisor updates
+|-- tests/                         # Unit tests for solvers, models, GUI artifacts, and experiments
+|-- results/selected/              # Curated figures for GitHub display
+|-- requirements.txt
+`-- README.md
 ```
 
 ## Main Modules
@@ -139,6 +156,7 @@ python reproduction/run_reproduction.py
 Useful short documents are included under `docs/`:
 
 - `docs/prof_xu_update.md`: one-page supervisor update.
+- `docs/prof_wen_update.md`: urban-navigation and robust-PNT-oriented supervisor update.
 - `docs/selected_results_captions.md`: English captions for the selected figures.
 - `docs/method_notes.md`: method-level notes.
 - `docs/limitations.md`: detailed limitations.
@@ -154,7 +172,7 @@ This MiniLab is intentionally limited and should be read as a learning portfolio
 - It does not process IF samples, RF data, SDR streams, ephemerides, broadcast corrections, or real C/N0 logs.
 - The LEO-like sources are abstract moving ranging beacons, not a real LEO orbit model or real LEO PNT signal model.
 - The urban model is a simplified 2D blockage toy model, not a 3D city model or mapping-aided GNSS system.
-- The pseudorange-correlogram component is a conceptual toy experiment, not an exact reproduction of a full direct-position-estimation pipeline.
+- The pseudorange-correlogram component is a conceptual toy experiment, not an exact UrbanNav/RINEX reproduction or full direct-position-estimation pipeline.
 - Robust LS and residual exclusion are educational baselines, not complete RAIM, ARAIM, or integrity-monitoring algorithms.
 - Spoofing-like drift is applied only to synthetic pseudorange arrays. The project cannot generate, transmit, replay, or decode real GNSS RF signals.
 

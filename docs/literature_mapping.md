@@ -24,7 +24,7 @@ Careful wording for supervisor communication:
 
 Prof. Xu's research directions include satellite positioning and navigation, GNSS signal processing, LEO PNT, cellular/wireless signal positioning, and GNSS interference or anomaly-related topics.
 
-### Selected Literature-Grounded Reproduction
+### Selected Literature-Grounded Conceptual Replication
 
 Selected paper:
 
@@ -41,7 +41,7 @@ Data source boundary:
 
 - Public data used in this MiniLab: UrbanNav-HK-Medium-Urban-1 TST ground-truth route subset.
 - Synthetic data used in this MiniLab: satellite geometry, pseudoranges, receiver clock bias, NLOS-like biases, and C/N0 values.
-- This is a simplified reproduction / conceptual replication, not an exact reproduction of the original UrbanNav/RINEX experiment.
+- This is a pseudorange-correlogram-inspired conceptual replication, not an exact reproduction of the original UrbanNav/RINEX experiment.
 - UrbanNav is currently used only for the public ground-truth route subset.
 - Pseudorange, C/N0, receiver clock bias, satellite geometry, and LOS/multipath/NLOS labels are synthetic.
 - No original UrbanNav RINEX pseudorange or real C/N0 is parsed yet.
@@ -52,9 +52,9 @@ How it connects to existing modules:
 - **DOP/HDOP:** the same simplified source geometry idea remains useful for understanding candidate-position sensitivity.
 - **WLS:** the selected paper weights pseudorange consistency by C/N0; the toy implementation uses synthetic C/N0 to connect with the MiniLab's uncertainty-weighted least-squares theme.
 - **Robust LS:** the pseudorange-correlogram score downweights or clips inconsistent measurements, which is conceptually related to robust estimation under outliers.
-- **GNSS/INS toy fusion:** not directly reproduced, but the same public UrbanNav route could later be used for GNSS/INS-style studies.
-- **LEO-like aiding:** not directly reproduced here, though the project can later compare correlogram scoring under added LEO-like ranging geometry.
-- **Urban NLOS/multipath simulation:** the simplified reproduction injects synthetic multipath/NLOS positive pseudorange bias and lower synthetic C/N0 to mimic the kind of urban degradation discussed by the paper.
+- **GNSS/INS toy fusion:** not directly implemented from the paper, but the same public UrbanNav route could later be used for GNSS/INS-style studies.
+- **LEO-like aiding:** not implemented from the paper, though the project can later compare correlogram scoring under added LEO-like ranging geometry.
+- **Urban NLOS/multipath simulation:** the conceptual replication injects synthetic multipath/NLOS positive pseudorange bias and lower synthetic C/N0-like weights to mimic the kind of urban degradation discussed by the paper.
 
 High-level ideas reflected in this project:
 

@@ -21,9 +21,9 @@ The selected target is the 2024 GPS Solutions paper on pseudorange correlogram p
 Data priority was applied as follows:
 
 1. Public code from the selected paper: not found in this search.
-2. Public dataset used by the paper: partially used. The paper points to the open-source UrbanNav dataset, and the UrbanNav repository lists downloadable GNSS RINEX and ground-truth files. This simplified reproduction uses only a small public UrbanNav-HK-Medium-Urban-1 TST ground-truth text file as the real route reference.
+2. Public dataset used by the paper: partially used. The paper points to the open-source UrbanNav dataset, and the UrbanNav repository lists downloadable GNSS RINEX and ground-truth files. This conceptual replication uses only a small public UrbanNav-HK-Medium-Urban-1 TST ground-truth text file as the real route reference.
 3. Reported paper table values: not used as numerical inputs.
 4. Digitized figure values: not used.
 5. Synthetic data: used for satellite geometry, pseudorange, C/N0, receiver clock bias, LOS/multipath/NLOS labels, and multipath/NLOS biases because this MiniLab does not yet parse the full RINEX/RTKLIB workflow. These synthetic measurements are clearly labeled as synthetic; they are not original raw data from the paper.
 
-Therefore, the output is labeled as a simplified reproduction / conceptual replication of one algorithmic idea, not an exact reproduction of the paper's UrbanNav/RINEX experiments.
+Therefore, the output is labeled as a conceptual replication of one algorithmic idea, not an exact reproduction of the paper's UrbanNav/RINEX experiments.

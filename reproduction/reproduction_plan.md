@@ -1,14 +1,14 @@
-# Pseudorange Correlogram Reproduction Plan
+# Pseudorange Correlogram Conceptual Replication Plan
 
 ## Objective
 
-Build a small, academically honest simplified reproduction of one component from Vicenzo et al. (2024): pseudorange-correlogram candidate-state scoring for urban GNSS robustness.
+Build a small, academically honest conceptual replication of one component from Vicenzo et al. (2024): pseudorange-correlogram candidate-state scoring for urban GNSS robustness.
 
 ## Dataset Or Synthetic Setup
 
 - Public data: a small UrbanNav-HK-Medium-Urban-1 TST ground-truth text file is used as the real trajectory reference.
 - Synthetic data: satellite positions, pseudorange measurements, receiver clock bias, LOS/multipath/NLOS labels, multipath/NLOS positive biases, and C/N0 values are generated with fixed random seeds.
-- Data label: this is a simplified reproduction / conceptual replication. It does not use original UrbanNav RINEX pseudorange observations, real C/N0, manually transcribed paper table values, digitized figure values, or the paper's generated result files.
+- Data label: this is a conceptual replication using synthetic measurements. It does not use original UrbanNav RINEX pseudorange observations, real C/N0, manually transcribed paper table values, digitized figure values, or the paper's generated result files.
 
 ## New Files
 
@@ -65,7 +65,7 @@ From the project root:
 python reproduction/run_reproduction.py
 ```
 
-This downloads or reuses the small public UrbanNav ground-truth file, runs the synthetic pseudorange experiment, and generates all outputs under `results/reproduction/`.
+This reuses the small public UrbanNav ground-truth route file included with the project, runs the synthetic pseudorange experiment, and generates all outputs under `results/reproduction/`.
 
 ## How To Verify
 
@@ -86,4 +86,4 @@ Expected behavior:
 
 ## Limitations
 
-This does not reproduce the paper's exact UrbanNav RINEX-based results. It only implements one algorithmic idea at the 2D synthetic pseudorange-measurement level. It should be presented as "inspired by", "simplified reproduction", "conceptual replication", or "pseudorange-correlogram-inspired toy implementation", not as an exact reproduction of the original system.
+This does not reproduce the paper's exact UrbanNav RINEX-based results. It only implements one algorithmic idea at the 2D synthetic pseudorange-measurement level. It should be presented as "inspired by", "conceptual replication", or "pseudorange-correlogram-inspired toy implementation", not as an exact reproduction of the original system.

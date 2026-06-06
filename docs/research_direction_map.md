@@ -97,7 +97,7 @@ Simplified:
 
 - This is a two-agent conceptual example, not a full V2X, UWB, or networked cooperative localization system.
 
-## Direction F - Literature-Grounded Reproduction
+## Direction F - Literature-Grounded Conceptual Replication
 
 Implemented:
 
@@ -116,4 +116,4 @@ Simplified:
 
 - The public UrbanNav route is used as a reference trajectory.
 - Pseudoranges, C/N0, clock bias, and NLOS-like biases are synthetic.
-- This is a conceptual reproduction of one algorithmic idea, not a full reproduction of the selected paper's real-data pipeline.
+- This is a conceptual replication of one algorithmic idea, not an exact reproduction of the selected paper's real-data pipeline.

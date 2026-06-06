@@ -11,7 +11,7 @@
 - GNSS/INS fusion is a toy constant-velocity Kalman filter, not strapdown INS or an error-state EKF.
 - Sliding-window optimization is factor-graph-inspired but not a full factor graph.
 - Collaborative positioning is a two-agent relative-distance toy example, not a production cooperative localization system.
-- The literature-grounded reproduction uses synthetic measurements and should not be described as a full paper reproduction.
+- The literature-grounded conceptual replication uses synthetic measurements and should not be described as an exact paper reproduction.
 
 ## Experiment Limitations
 
@@ -41,6 +41,6 @@ Avoid wording:
 
 - "real GNSS receiver"
 - "real spoofing detection"
-- "full paper reproduction"
+- "exact paper reproduction"
 - "validated urban-navigation system"
 - "proves real-world performance"
