@@ -6,10 +6,10 @@ The intended reader is an academic supervisor or mentor who would like to unders
 
 The repository is organized around two reading paths: GNSS signal processing / LEO-like assisted PNT, and urban navigation / robust PNT extensions.
 
-## Quick Review for Supervisors
+## Quick Review
 
 - `docs/prof_xu_update.md`: one-page update for the GNSS signal processing / LEO-like assisted PNT direction.
-- `docs/urban_navigation_track.md`: urban navigation / robust PNT extension note covering synthetic LOS/NLOS modeling, GNSS/INS toy fusion, sliding-window LS, and collaborative positioning.
+- `docs/urban_navigation_track.md`: urban-navigation and robust-PNT-oriented extension notes, including LOS/NLOS toy modeling, urban error maps, GNSS/INS toy fusion, sliding-window LS, and collaborative positioning.
 - `results/selected/`: five curated result figures for a fast visual review.
 - `reproduction/method_scope.md`: exact boundary of the pseudorange-correlogram-inspired conceptual replication.
 - `docs/limitations.md`: technical and presentation limitations.
