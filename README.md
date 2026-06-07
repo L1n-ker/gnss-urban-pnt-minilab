@@ -2,24 +2,22 @@
 
 This repository is a small research-preparation project for learning GNSS positioning, urban PNT degradation, robust pseudorange estimation, and simplified LEO-like ranging assistance.
 
-The intended reader is an academic supervisor or mentor who would like to understand my self-study preparation in GNSS positioning and assisted PNT. The project was organized after receiving advice from Prof. Bing Xu at PolyU to first strengthen the fundamentals of GNSS positioning and then gradually move toward multipath, spoofing, and LEO PNT topics. It is not a research-grade receiver. Its purpose is to show that I have started building the mathematical, simulation, coding, and experimental-analysis foundation needed for future work in satellite navigation.
+The intended reader is an academic supervisor or mentor who would like to understand my self-study preparation in GNSS positioning and assisted PNT. The project was organized around the preparation path of first strengthening GNSS positioning fundamentals, then gradually moving toward multipath, spoofing-like measurement anomalies, and LEO PNT topics. It is not a research-grade receiver. Its purpose is to show that I have started building the mathematical, simulation, coding, and experimental-analysis foundation needed for future work in satellite navigation.
 
-Suggested GitHub repository description:
-
-> A GNSS urban PNT learning portfolio for robust pseudorange positioning, NLOS simulation, LEO-like aiding, and pseudorange-correlogram toy reproduction.
+The repository is organized around two reading paths: GNSS signal processing / LEO-like assisted PNT, and urban navigation / robust PNT extensions.
 
 ## Quick Review for Supervisors
 
-- `docs/prof_xu_update.md`: one-page update focused on GNSS positioning, multipath/NLOS learning, LEO-like assisted PNT, and the pseudorange-correlogram-inspired toy experiment.
-- `docs/prof_wen_update.md`: one-page update focused on urban navigation, robust PNT, synthetic LOS/NLOS modeling, GNSS/INS toy fusion, sliding-window LS, and collaborative positioning.
+- `docs/prof_xu_update.md`: one-page update for the GNSS signal processing / LEO-like assisted PNT direction.
+- `docs/urban_navigation_track.md`: urban navigation / robust PNT extension note covering synthetic LOS/NLOS modeling, GNSS/INS toy fusion, sliding-window LS, and collaborative positioning.
 - `results/selected/`: five curated result figures for a fast visual review.
 - `reproduction/method_scope.md`: exact boundary of the pseudorange-correlogram-inspired conceptual replication.
 - `docs/limitations.md`: technical and presentation limitations.
 
 This repository can be read through two demo paths:
 
-- GNSS signal processing and LEO-like assisted PNT path.
-- Urban navigation and robust PNT path.
+- GNSS signal processing / LEO-like assisted PNT path.
+- Urban navigation / robust PNT path.
 
 ## Two-Minute Overview
 
@@ -27,7 +25,7 @@ This repository can be read through two demo paths:
 
 **What I implemented.** The project includes pseudorange positioning with clock-bias estimation, OLS/WLS/Huber/Cauchy/residual-exclusion solvers, DOP/HDOP geometry analysis, synthetic urban LOS/NLOS degradation, simplified LEO-like ranging-source aiding, and a pseudorange-correlogram-inspired candidate-search toy experiment.
 
-**Relation to Prof. Xu's advice.** The project follows the preparation path of learning GNSS positioning fundamentals first, then moving toward multipath / NLOS robustness, spoofing-like measurement anomalies, and LEO PNT concepts.
+**Preparation path.** The project follows the preparation path of learning GNSS positioning fundamentals first, then moving toward multipath / NLOS robustness, spoofing-like measurement anomalies, and LEO PNT concepts.
 
 **Main limitation.** This is a synthetic 2D educational project. It does not process real RINEX, IF samples, ephemerides, carrier phase, real C/N0 logs, or real LEO orbit models.
 
@@ -155,8 +153,8 @@ python reproduction/run_reproduction.py
 
 Useful short documents are included under `docs/`:
 
-- `docs/prof_xu_update.md`: one-page supervisor update.
-- `docs/prof_wen_update.md`: urban-navigation and robust-PNT-oriented supervisor update.
+- `docs/prof_xu_update.md`: one-page update for the GNSS signal processing / LEO-like assisted PNT direction.
+- `docs/urban_navigation_track.md`: urban navigation / robust PNT extension note.
 - `docs/selected_results_captions.md`: English captions for the selected figures.
 - `docs/method_notes.md`: method-level notes.
 - `docs/limitations.md`: detailed limitations.

@@ -48,7 +48,7 @@ python app.py
 
 6. Literature-grounded conceptual replication:
 
-> I selected a recent GPS Solutions paper involving Prof. Bing Xu on pseudorange correlogram positioning. My conceptual replication is intentionally limited: it uses a public UrbanNav route subset, but synthetic pseudorange and C/N0-like measurements. It demonstrates one algorithmic idea rather than reproducing the paper's real UrbanNav/RINEX experiment.
+> I selected a recent GPS Solutions paper on pseudorange correlogram positioning. My conceptual replication is intentionally limited: it uses a public UrbanNav route subset, but synthetic pseudorange and C/N0-like measurements. It demonstrates one algorithmic idea rather than reproducing the paper's real UrbanNav/RINEX experiment.
 
 7. Close:
 

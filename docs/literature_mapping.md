@@ -2,9 +2,9 @@
 
 This document maps the MiniLab to research directions I am preparing to study. It does not claim that the project reproduces any specific paper. The current implementation is a simplified educational simulation and should be understood as a conceptual learning bridge.
 
-## Prof. Weisong Wen-Related Directions
+## Urban Navigation and Robust PNT Directions
 
-Prof. Wen's research directions are closely connected to urban navigation, multi-sensor positioning, GNSS/INS integration, robust estimation, LiDAR/visual SLAM, and autonomous systems.
+This reading path is closely connected to urban navigation, multi-sensor positioning, GNSS/INS integration, robust estimation, LiDAR/visual SLAM, and autonomous systems.
 
 High-level ideas reflected in this project:
 
@@ -20,9 +20,9 @@ Careful wording for supervisor communication:
 
 > This project is inspired by urban navigation and multi-sensor GNSS/INS research directions. It is not a reproduction of a specific paper, but it helped me build a simplified baseline for geometry, robust estimation, and sensor-aiding concepts.
 
-## Prof. Bing Xu-Related Directions
+## GNSS Signal Processing and LEO-Like Assisted PNT Directions
 
-Prof. Xu's research directions include satellite positioning and navigation, GNSS signal processing, LEO PNT, cellular/wireless signal positioning, and GNSS interference or anomaly-related topics.
+This reading path is connected to satellite positioning and navigation, GNSS signal processing, LEO PNT, cellular/wireless signal positioning, and GNSS interference or anomaly-related topics.
 
 ### Selected Literature-Grounded Conceptual Replication
 
@@ -32,7 +32,7 @@ Selected paper:
 
 Why this paper was selected:
 
-- It is recent and appears on Prof. Xu's publication list.
+- It is recent and directly related to GNSS positioning and urban robustness.
 - It directly addresses urban GNSS multipath/NLOS robustness.
 - Its pseudorange-correlogram idea can be reduced to a small, inspectable 2D experiment.
 - The paper points to the public UrbanNav dataset for validation data.

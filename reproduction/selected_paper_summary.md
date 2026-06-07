@@ -8,7 +8,7 @@ Vicenzo, S., Xu, B., Xu, H., & Hsu, L.-T. (2024). "GNSS direct position estimati
 
 - PolyU Institutional Research Archive record: <https://ira.lib.polyu.edu.hk/handle/10397/104958>
 - Springer article page: <https://link.springer.com/article/10.1007/s10291-024-01627-5>
-- Prof. Bing Xu publication page: <https://pbingxu.github.io/publications/>
+- Author publication page: <https://pbingxu.github.io/publications/>
 - UrbanNav dataset repository cited by the paper: <https://github.com/IPNL-POLYU/UrbanNavDataset>
 
 ## Research Problem
@@ -47,4 +47,4 @@ No paper table values are manually transcribed, and no figure values are digitiz
 
 ## What I Learned
 
-This component connects the MiniLab's existing OLS/WLS/robust-LS work to a recent paper by Prof. Bing Xu. It shows how an algorithm can reduce the influence of inconsistent, low-C/N0 NLOS-like measurements by scoring candidate states directly, while also making clear that this is only a pseudorange-correlogram-inspired toy implementation, not an exact reproduction of the original UrbanNav/RINEX experiment.
+This component connects the MiniLab's existing OLS/WLS/robust-LS work to a recent pseudorange-correlogram paper. It shows how an algorithm can reduce the influence of inconsistent, low-C/N0 NLOS-like measurements by scoring candidate states directly, while also making clear that this is only a pseudorange-correlogram-inspired toy implementation, not an exact reproduction of the original UrbanNav/RINEX experiment.
