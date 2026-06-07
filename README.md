@@ -4,20 +4,14 @@ This repository is a small research-preparation project for learning GNSS positi
 
 The intended reader is an academic supervisor or mentor who would like to understand my self-study preparation in GNSS positioning and assisted PNT. The project was organized around the preparation path of first strengthening GNSS positioning fundamentals, then gradually moving toward multipath, spoofing-like measurement anomalies, and LEO PNT topics. It is not a research-grade receiver. Its purpose is to show that I have started building the mathematical, simulation, coding, and experimental-analysis foundation needed for future work in satellite navigation.
 
-The repository is organized around two reading paths: GNSS signal processing / LEO-like assisted PNT, and urban navigation / robust PNT extensions.
+The repository is organized as a GNSS positioning and assisted-PNT learning portfolio, with emphasis on pseudorange positioning, NLOS/multipath robustness, LEO-like ranging assistance, and a pseudorange-correlogram-inspired conceptual replication.
 
 ## Quick Review
 
 - `docs/prof_xu_update.md`: one-page update for the GNSS signal processing / LEO-like assisted PNT direction.
-- `docs/urban_navigation_track.md`: urban-navigation and robust-PNT-oriented extension notes, including LOS/NLOS toy modeling, urban error maps, GNSS/INS toy fusion, sliding-window LS, and collaborative positioning.
 - `results/selected/`: five curated result figures for a fast visual review.
 - `reproduction/method_scope.md`: exact boundary of the pseudorange-correlogram-inspired conceptual replication.
 - `docs/limitations.md`: technical and presentation limitations.
-
-This repository can be read through two demo paths:
-
-- GNSS signal processing / LEO-like assisted PNT path.
-- Urban navigation / robust PNT path.
 
 ## Two-Minute Overview
 
@@ -154,7 +148,6 @@ python reproduction/run_reproduction.py
 Useful short documents are included under `docs/`:
 
 - `docs/prof_xu_update.md`: one-page update for the GNSS signal processing / LEO-like assisted PNT direction.
-- `docs/urban_navigation_track.md`: urban navigation / robust PNT extension note.
 - `docs/selected_results_captions.md`: English captions for the selected figures.
 - `docs/method_notes.md`: method-level notes.
 - `docs/limitations.md`: detailed limitations.
